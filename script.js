@@ -89,22 +89,13 @@ const romanNumeral = [
     }
     
 ]
-/*
-convertBtn.addEventListener("click", () => {
-if (number.value == romanNumeral[0].charVal ) {output.textContent = romanNumeral[0].char;
-}
-
-})
-*/
-
-//console.log(romanNumeral[0].charVal);
-
 
 convertBtn.addEventListener("click", () => {
-for(let i = 0; i >= 0; i++) {
-    if(number.value == romanNumeral[i].charVal){
+for(let i = 0; i < romanNumeral.length; i++) {
+    if(number.value == romanNumeral[i].charVal) {
         output.textContent = romanNumeral[i].char;
     }
     
 }
 })
+
